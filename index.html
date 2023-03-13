@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="ecalculator.css">
+</head>
+<body class="bg-secondary">
+
+    <h2 class="position-absolute  start-50 translate-middle ">Calculator</h2>
+
+    <div class="calculator position-absolute top-50 start-50 translate-middle bg-dark">
+        <div class="calculatorOutput">
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="calculatorKeys m-3">
+            <button class="number contC" onclick="clearResult()">C</button>
+            <button class="number contC" onclick="backspace()">DEL</button>
+            <button class="operator calc" onclick="divide('/')">/</button>
+            <button class="operator calc" onclick="multiply('*')">*</button>
+            <button class="number" onclick="Number(7)">7</button>
+            <button class="number" onclick="Number(8)">8</button>
+            <button class="number" onclick="Number(9)">9</button>
+            <button class="operator calc" onclick="subtract('-')">-</button>
+            <button class="number" onclick="Number(4)">4</button>
+            <button class="number" onclick="Number(5)">5</button>
+            <button class="number" onclick="Number(6)">6</button>
+            <button class="operator calc"class="cont" onclick="add('+')">+</button>
+            <button class="number" onclick="Number(1)">1</button>
+            <button class="number" onclick="Number(2)">2</button>
+            <button class="number" onclick="Number(3)">3</button>
+            <button class="number contE" onclick="solve()">=</button>
+            <button class="contZ" onclick="Number(0)">0</button>
+            <button class="operator" onclick="decimal('.')">.</button>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="ecalculator.js"></script>
+</body>
+</html>
